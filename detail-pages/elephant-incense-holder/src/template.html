@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=780">
+<title>박스형 코끼리문양 인센스 홀더 | 상세페이지</title>
+<style>
+/*FONTS*/
+:root{
+  --night:#0f2724; --gold:#c9a25b; --gold2:#e6cd96; --cream:#f4ede1; --paper:#faf7f1;
+  --ink:#2b2420; --sub:#6c625a; --mute:#9a8f84; --line:#ece3d4;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:780px;background:#fff}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all;letter-spacing:-.02em}
+.sec{position:relative;width:780px;overflow:hidden}
+.en{font-family:'Cormorant Garamond',serif;letter-spacing:.28em;font-weight:600;font-variant-numeric:lining-nums;font-feature-settings:'lnum' 1}
+.serif{font-family:'Noto Serif KR',serif}
+img{display:block}
+
+/* ---------- HERO ---------- */
+.hero{height:1044px;text-align:center;color:var(--cream);
+  background:radial-gradient(130% 75% at 50% 0%,#245850 0%,#143a35 48%,#0a1f1c 100%)}
+.hero .sky{position:absolute;inset:0}
+.hero .orn{position:relative;display:block;width:60px;height:60px;margin:64px auto 0}
+.hero .eyebrow{position:relative;margin-top:22px;font-size:22px;color:var(--gold2)}
+.hero .pre{position:relative;margin-top:30px;font:500 32px/1.3 'Noto Serif KR',serif;color:var(--gold2);letter-spacing:-.01em}
+.hero h1{position:relative;margin-top:8px;font:700 60px/1.25 'Noto Serif KR',serif;letter-spacing:-.04em;color:#fbf6ec}
+.hero .sub{position:relative;margin-top:24px;font-size:25px;line-height:1.5;color:rgba(244,237,225,.74)}
+.hero .glow{position:absolute;left:10px;top:446px;width:760px;height:440px;
+  background:radial-gradient(closest-side,rgba(214,170,96,.30),rgba(214,170,96,.08) 60%,rgba(214,170,96,0))}
+.hero .floor{position:absolute;left:120px;top:770px;width:560px;height:46px;
+  background:radial-gradient(closest-side,rgba(0,0,0,.6),rgba(0,0,0,0))}
+.hero .prod{position:absolute;left:52px;top:500px;width:676px}
+.hero .prod img{width:100%;filter:drop-shadow(0 26px 30px rgba(0,0,0,.45))}
+.hero .badges{position:absolute;left:0;right:0;top:892px;display:flex;justify-content:center;gap:12px;list-style:none}
+.hero .badges li{padding:15px 24px;border:1px solid rgba(230,205,150,.5);border-radius:100px;
+  font-size:22px;font-weight:500;line-height:1;color:var(--cream);background:rgba(255,255,255,.05)}
+.hero .badges li b{color:var(--gold2);font-weight:500}
+
+.ico-el{display:block;fill:currentColor}
+
+/* ---------- COMMON ---------- */
+.eyebrow-d{font-size:22px;color:var(--gold)}
+.h2{margin-top:18px;font:700 46px/1.38 'Noto Serif KR',serif;letter-spacing:-.04em;color:var(--ink)}
+.body{margin-top:28px;font-size:25px;line-height:1.75;color:var(--sub)}
+.body b{color:var(--ink);font-weight:700}
+.pt-label{display:inline-flex;align-items:center;gap:16px;font-size:24px;color:var(--gold)}
+.pt-label::before,.pt-label::after{content:"";width:40px;height:1px;background:var(--gold);opacity:.55}
+.photo{position:relative;margin-top:64px;border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.photo img{width:100%}
+.photo svg.ov{position:absolute;left:0;top:0}
+.cap{margin-top:18px;font-size:20px;line-height:1.5;color:var(--mute);text-align:left;padding-left:6px}
+.pill{position:absolute;background:rgba(255,255,255,.97);border-radius:100px;padding:13px 22px;
+  font-size:21px;font-weight:700;line-height:1;color:var(--ink);white-space:nowrap;
+  box-shadow:0 8px 22px rgba(60,38,16,.18);border:1px solid rgba(201,162,91,.55)}
+.tag{position:absolute;background:rgba(255,255,255,.97);border-radius:18px;padding:14px 18px;text-align:center;
+  box-shadow:0 10px 26px rgba(40,24,8,.28);border:1px solid rgba(201,162,91,.6)}
+.tag .en{display:block;font-size:15px;color:var(--gold);letter-spacing:.22em;line-height:1}
+.tag b{display:block;margin-top:9px;font-size:22px;line-height:1;color:var(--ink)}
+
+/* ---------- CHECK POINT ---------- */
+.checks{background:var(--paper);padding:136px 40px 128px;text-align:center}
+.grid{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;border-radius:28px;padding:46px 22px 44px;border:1px solid #efe6d8;
+  box-shadow:0 14px 34px rgba(84,60,30,.06)}
+.card .ic{width:88px;height:88px;margin:0 auto;border-radius:50%;background:#f6efe2;display:flex;align-items:center;justify-content:center}
+.card .ic svg{width:50px;height:50px}
+.card .n{margin-top:24px;font-size:21px;color:var(--gold);letter-spacing:.14em}
+.card h3{margin-top:8px;font-size:28px;font-weight:700;line-height:1.35;letter-spacing:-.04em}
+.card p{margin-top:10px;font-size:22px;line-height:1.5;color:var(--sub)}
+
+/* ---------- POINTS ---------- */
+.point{padding:140px 40px 130px;text-align:center}
+.point.cream{background:var(--cream)}
+.point.cream .photo{border-color:#e7dcc8;box-shadow:0 16px 40px rgba(84,60,30,.10)}
+.details{margin-top:60px;display:flex;justify-content:center;gap:72px}
+.dt .circ{width:216px;height:216px;border-radius:50%;overflow:hidden;
+  box-shadow:0 0 0 1px rgba(201,162,91,.7),0 0 0 10px #fff,0 0 0 11px rgba(201,162,91,.35)}
+.dt .circ img{width:100%;height:100%;object-fit:cover}
+.dt .en{display:block;margin-top:30px;font-size:19px;color:var(--gold)}
+.dt b{display:block;margin-top:8px;font-size:24px;font-weight:500;color:var(--ink)}
+
+.howto{margin-top:96px}
+.howto .h3{margin-top:14px;font:700 36px/1.35 'Noto Serif KR',serif;letter-spacing:-.04em}
+.steps{margin-top:44px;display:flex;gap:14px}
+.step{flex:1;background:#fff;border-radius:24px;padding:34px 10px 34px;border:1px solid #e9dfcc}
+.step .en{font-size:18px;color:var(--gold);letter-spacing:.2em}
+.step svg{width:76px;height:76px;margin:20px auto 0;display:block}
+.step p{margin-top:20px;font-size:23px;font-weight:500;line-height:1.45;color:var(--ink)}
+.arrow{align-self:center;width:0}
+
+/* ---------- SIZE ---------- */
+.size{background:var(--paper);padding:140px 40px 130px;text-align:center}
+.size .draw{margin-top:56px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:52px 20px 44px}
+.size .note{margin-top:16px;font-size:20px;color:var(--mute);text-align:right}
+.spec{margin-top:54px;width:100%;border-collapse:collapse;text-align:left;border-top:2px solid var(--ink)}
+.spec th,.spec td{padding:24px 18px;font-size:23px;line-height:1.45;border-bottom:1px solid #e3d9c8;vertical-align:top}
+.spec th{width:168px;font-weight:700;color:var(--ink);background:#f3ecdf}
+.spec td{color:#4a423c;background:#fff}
+
+/* ---------- NOTICE ---------- */
+.notice{background:#efebe4;padding:128px 40px 120px}
+.notice .head{text-align:center}
+.notice .badge{width:76px;height:76px;margin:0 auto;border-radius:50%;background:var(--ink);color:var(--gold2);
+  display:flex;align-items:center;justify-content:center;font:700 40px/1 'Noto Serif KR',serif}
+.notice .head .en{display:block;margin-top:26px;font-size:21px;color:#a8874c}
+.notice .head h2{margin-top:12px;font:700 42px/1.35 'Noto Serif KR',serif;letter-spacing:-.04em}
+.box{margin-top:28px;background:#fff;border-radius:24px;padding:40px 40px 38px;border:1px solid #e2dbcf}
+.notice .head + .box{margin-top:56px}
+.box h3{display:flex;align-items:center;gap:14px;font-size:28px;font-weight:700;letter-spacing:-.04em}
+.box h3 i{font-style:normal;flex:none;width:40px;height:40px;border-radius:12px;background:#f3ead9;color:#a07a3a;
+  display:flex;align-items:center;justify-content:center;font:700 19px/1 'Cormorant Garamond',serif;letter-spacing:0;font-feature-settings:'lnum' 1}
+.box ul{margin-top:22px;list-style:none}
+.box li{position:relative;padding-left:22px;font-size:23px;line-height:1.68;color:#544b44}
+.box li + li{margin-top:12px}
+.box li::before{content:"";position:absolute;left:2px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.box li b{color:var(--ink);font-weight:700}
+.box.key{border:2px solid var(--gold);box-shadow:0 14px 34px rgba(120,86,30,.10)}
+.confirm{margin-top:28px;background:var(--ink);border-radius:24px;padding:36px 36px;text-align:center;color:#f4ede1;
+  font-size:24px;line-height:1.65}
+.confirm b{color:var(--gold2);font-weight:700}
+.confirm small{display:block;margin-top:10px;font-size:22px;color:rgba(244,237,225,.7)}
+.box.safety h3 i{background:#f6e3df;color:#b4533f}
+.box.safety li::before{background:#c98a7c}
+
+.footer{height:150px;background:var(--night);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.footer svg{width:30px;height:30px}
+.footer .en{font-size:19px;color:var(--gold2);letter-spacing:.34em}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="eleph" viewBox="0 0 100 80"><path d="M23 33C17 31 12 24 10 13C9.5 9.5 13.5 8.5 14.5 12C16 19 19.5 23.5 24.5 24.5C26 17 32 13 41 13.5C46 12 52 13 58 14.5C78 14 92 25 92 42C93.5 45 95.5 48.5 97 52.5L94.5 53.5C93 50.5 91.5 48 90 46.5L88.5 70L79 70L77.5 59C68 61.5 53 61.5 45 59L44 70L34.5 70L33 53C27 49 24 42 23 33Z"/></symbol></defs></svg>
+
+<!-- ===== 01 HERO ===== -->
+<section class="sec hero" id="s-hero">
+  <!--SKY-->
+  <!--ORN-->
+  <p class="eyebrow en">ELEPHANT · INCENSE BOX</p>
+  <p class="pre">인도의 전통을 담은 박스형</p>
+  <h1>코끼리문양 인센스 홀더</h1>
+  <p class="sub">눕혀서 사용하는 인센스 스틱 전용 홀더</p>
+  <div class="glow"></div>
+  <div class="floor"></div>
+  <div class="prod"><img src="assets/hero-cutout.png" alt="박스형 코끼리문양 인센스 홀더"></div>
+  <ul class="badges">
+    <li><b>✦</b> 금색 코끼리 문양</li>
+    <li>덮개형 구조</li>
+    <li>하단 스틱 수납</li>
+  </ul>
+</section>
+
+<!-- ===== 02 CHECK POINT ===== -->
+<section class="sec checks" id="s-check">
+  <p class="eyebrow-d en">CHECK POINT</p>
+  <h2 class="h2">작은 상자 하나로 완성하는<br>차분한 향의 시간</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="ic"><svg class="ico-el" viewBox="0 0 100 80" style="width:56px;height:45px;color:#b58b45"><use href="#eleph"/></svg></div>
+      <p class="n en">01</p>
+      <h3>전통 코끼리문양</h3>
+      <p>고급스러운 금색으로 새긴<br>인도 전통 코끼리 장식</p>
+    </div>
+    <div class="card">
+      <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#b58b45" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="29" width="36" height="12" rx="2"/><path d="M6 25h36l-4-6H10z"/><path d="M24 15c-3-2 3-4 0-6s3-4 0-6"/><path d="M17 15c-2-1.5 2-3 0-4.5"/><path d="M31 15c-2-1.5 2-3 0-4.5"/></svg></div>
+      <p class="n en">02</p>
+      <h3>덮개형 구조</h3>
+      <p>커버를 덮어 은은하게<br>천천히 퍼지는 향</p>
+    </div>
+    <div class="card">
+      <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#b58b45" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 14l4-6h22l4 6v14H5z"/><path d="M5 28h30v9H5z"/><path d="M28 30.5h15v5H28"/><path d="M9 33.5h15M9 31h12"/></svg></div>
+      <p class="n en">03</p>
+      <h3>하단 수납 공간</h3>
+      <p>여분의 인센스 스틱을<br>홀더 안에 깔끔하게</p>
+    </div>
+    <div class="card">
+      <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#b58b45" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="20" width="42" height="13" rx="2"/><path d="M9 20v6M15 20v4M21 20v6M27 20v4M33 20v6M39 20v4"/><path d="M8 13h32M8 13l3-3M8 13l3 3M40 13l-3-3M40 13l-3 3"/></svg></div>
+      <p class="n en">04</p>
+      <h3>30cm 박스형</h3>
+      <p>스틱을 눕혀서 사용하는<br>스틱 전용 홀더</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 POINT 01 ===== -->
+<section class="sec point" id="s-p1">
+  <p class="pt-label en">POINT 01</p>
+  <h2 class="h2">인도의 전통 코끼리문양,<br>고급스러운 금색 각인</h2>
+  <p class="body">인도의 전통스러운 코끼리문양이 <b>고급스러운 금색</b>으로<br>각인되어 있습니다. 은은하게 빛나는 금빛 포인트가<br>공간에 이국적인 분위기를 더해줍니다.</p>
+  <figure class="photo"><img src="assets/photo-closeup.jpg" alt="금색 코끼리 문양 디테일"></figure>
+  <div class="details">
+    <figure class="dt"><div class="circ"><img src="assets/detail-elephant.jpg" alt=""></div><span class="en">DETAIL · ELEPHANT</span><b>코끼리 문양</b></figure>
+    <figure class="dt"><div class="circ"><img src="assets/detail-pattern.jpg" alt=""></div><span class="en">DETAIL · PATTERN</span><b>덮개 투각 문양</b></figure>
+  </div>
+</section>
+
+<!-- ===== 04 POINT 02 ===== -->
+<section class="sec point cream" id="s-p2">
+  <p class="pt-label en">POINT 02</p>
+  <h2 class="h2">커버를 덮으면<br>향은 더 은은하고, 천천히</h2>
+  <p class="body">불을 붙인 인센스 스틱을 홀더 부분에 꽂은 후<br>커버를 덮어 사용하면, 은은하게 퍼지는 인센스 향을<br><b>더욱 천천히</b> 즐길 수 있습니다.</p>
+  <figure class="photo">
+    <img src="assets/photo-open.jpg" alt="커버를 연 내부 구조">
+    <svg class="ov" width="700" height="628" viewBox="0 0 700 628" fill="none">
+      <line x1="372" y1="40" x2="494" y2="62" stroke="#c9a25b" stroke-width="2"/>
+      <circle cx="366" cy="39" r="9" fill="#fff" stroke="#c9a25b" stroke-width="3"/>
+      <circle cx="527" cy="192" r="12" stroke="#fff" stroke-width="3"/>
+      <circle cx="527" cy="192" r="12" stroke="#c9a25b" stroke-width="2"/>
+    </svg>
+    <span class="pill" style="left:494px;top:40px">커버(덮개)</span>
+    <span class="tag" style="left:478px;top:210px;width:212px"><span class="en">STICK HOLDER</span><b>인센스 스틱 홀더</b></span>
+  </figure>
+  <p class="cap">* 제품 구조 설명을 위한 이미지로, 실제 제품의 문양 및 디자인과 다를 수 있습니다.</p>
+
+  <div class="howto">
+    <p class="pt-label en">HOW TO USE</p>
+    <h3 class="h3">이렇게 사용하세요</h3>
+    <div class="steps">
+      <div class="step">
+        <span class="en">STEP 1</span>
+        <svg viewBox="0 0 64 64" fill="none" stroke="#b58b45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 54L42 22"/><path d="M47 6c4 5 6 9 2 13-3 3-7 2-9-1-2-4 2-7 7-12z" fill="#f3e2bd"/></svg>
+        <p>인센스 스틱에<br>불을 붙여요</p>
+      </div>
+      <div class="step">
+        <span class="en">STEP 2</span>
+        <svg viewBox="0 0 64 64" fill="none" stroke="#b58b45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M44 58V26l8-10 8 10v32z" fill="#f3e2bd"/><circle cx="52" cy="32" r="2.2" fill="#b58b45" stroke="none"/><path d="M8 54l42-21"/><path d="M14 40l18-9" stroke-dasharray="3 4"/><path d="M27 28.5l6 2-3.5 5.2"/></svg>
+        <p>홀더 구멍에<br>스틱을 꽂아요</p>
+      </div>
+      <div class="step">
+        <span class="en">STEP 3</span>
+        <svg viewBox="0 0 64 64" fill="none" stroke="#b58b45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="40" width="52" height="14" rx="2"/><path d="M6 36h52l-5-8H11z"/><path d="M32 22c-4-3 4-5 0-8s4-5 0-8"/><path d="M22 22c-3-2 3-3.5 0-5.5"/><path d="M42 22c-3-2 3-3.5 0-5.5"/></svg>
+        <p>커버를 덮고<br>향을 즐겨요</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 POINT 03 ===== -->
+<section class="sec point" id="s-p3">
+  <p class="pt-label en">POINT 03</p>
+  <h2 class="h2">여분의 스틱은<br>하단 수납함에 쏙</h2>
+  <p class="body">홀더 아래 부분에 <b>여분의 인센스 스틱</b>을<br>수납할 수 있어, 따로 보관할 필요 없이<br>깔끔하게 정리할 수 있습니다.</p>
+  <figure class="photo">
+    <img src="assets/photo-drawer.jpg" alt="하단 스틱 수납 공간">
+    <svg class="ov" width="700" height="440" viewBox="0 0 700 440" fill="none">
+      <line x1="372" y1="296" x2="470" y2="398" stroke="#c9a25b" stroke-width="2"/>
+      <circle cx="366" cy="288" r="10" fill="#fff" stroke="#c9a25b" stroke-width="3"/>
+    </svg>
+    <span class="pill" style="left:466px;top:376px">스틱 수납 공간</span>
+  </figure>
+  <p class="cap">* 제품 구조 설명을 위한 이미지로, 실제 제품의 문양 및 디자인과 다를 수 있습니다.</p>
+</section>
+
+<!-- ===== 06 SIZE & INFO ===== -->
+<section class="sec size" id="s-size">
+  <p class="eyebrow-d en">SIZE &amp; INFO</p>
+  <h2 class="h2">제품 사이즈</h2>
+  <div class="draw">
+    <svg width="660" height="300" viewBox="0 0 660 300" fill="none" font-family="Noto Sans KR">
+      <path d="M130 120 L520 120 L566 84 L176 84 Z" fill="#f1e6d3" stroke="#2b2420" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M520 120 L566 84 L566 165 L520 201 Z" fill="#dcc6a5" stroke="#2b2420" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="130" y="120" width="390" height="81" fill="#e8d6ba" stroke="#2b2420" stroke-width="2"/>
+      <g fill="#c9a25b">
+        <use href="#eleph" x="176" y="143" width="44" height="35"/>
+        <use href="#eleph" x="303" y="147" width="44" height="35"/>
+        <use href="#eleph" x="430" y="143" width="44" height="35"/>
+      </g>
+      <g stroke="#c9a25b" stroke-width="2"><path d="M130 238H520"/><path d="M130 228v20M520 228v20"/></g>
+      <text x="325" y="282" text-anchor="middle" font-size="27" font-weight="700" fill="#2b2420">30cm</text>
+      <g stroke="#c9a25b" stroke-width="2"><path d="M98 120V201"/><path d="M88 120h20M88 201h20"/></g>
+      <text x="80" y="170" text-anchor="end" font-size="27" font-weight="700" fill="#2b2420">6.2cm</text>
+      <g stroke="#c9a25b" stroke-width="2"><path d="M536 218L582 182"/><path d="M530 210l12 16M576 174l12 16"/></g>
+      <text x="598" y="222" text-anchor="start" font-size="27" font-weight="700" fill="#2b2420">5cm</text>
+    </svg>
+  </div>
+  <p class="note">* 측정 방법에 따라 약간의 오차가 있을 수 있습니다.</p>
+  <table class="spec">
+    <tr><th>제품명</th><td>박스형 코끼리문양 인센스 홀더</td></tr>
+    <tr><th>크기</th><td>가로 30 × 폭 5 × 높이 6.2 (cm)</td></tr>
+    <tr><th>용도</th><td>인센스 스틱 전용 (눕혀서 사용)</td></tr>
+    <tr><th>구조</th><td>커버(덮개) + 스틱 홀더 + 하단 스틱 수납 공간</td></tr>
+    <tr><th>제작 방식</th><td>수작업 제작</td></tr>
+  </table>
+</section>
+
+<!-- ===== 07 NOTICE ===== -->
+<section class="sec notice" id="s-notice">
+  <div class="head">
+    <div class="badge">!</div>
+    <span class="en">NOTICE</span>
+    <h2>구매 전 꼭 확인해주세요</h2>
+  </div>
+
+  <div class="box key">
+    <h3><i>01</i>수작업 제품 특성 안내</h3>
+    <ul>
+      <li>본 제품은 <b>하나하나 수작업으로 제작</b>되어, 제품마다 문양의 위치와 크기, 마감 상태에 미세한 차이가 있을 수 있습니다.</li>
+      <li>나무 소재 특성상 <b>나뭇결, 옹이, 색상</b>이 제품마다 조금씩 다를 수 있습니다.</li>
+      <li>모니터 및 휴대폰 화면 설정에 따라 실제 색상과 차이가 있을 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="box key">
+    <h3><i>02</i>유격 발생 가능 안내</h3>
+    <ul>
+      <li>수작업 공정 특성상 <b>커버(덮개)와 본체, 하단 수납함 사이에 약간의 유격(틈)</b>이 발생할 수 있습니다.</li>
+      <li>나무는 온도·습도 변화에 따라 미세하게 수축·팽창하므로, 여닫을 때 다소 <b>헐겁거나 뻑뻑하게</b> 느껴질 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="confirm">위 사항은 <b>제품 불량이 아닌</b><br><b>수작업 제품의 자연스러운 특성</b>입니다.<small>구매 시 참고 부탁드립니다.</small></div>
+
+  <div class="box safety">
+    <h3><i>03</i>사용 시 주의사항</h3>
+    <ul>
+      <li>사용 중에는 자리를 비우지 마시고, 불에 타기 쉬운 물건과 떨어진 평평한 곳에서 사용해 주세요.</li>
+      <li>사용 후에는 불씨가 완전히 꺼졌는지 확인하고, 쌓인 재는 주기적으로 비워 주세요.</li>
+      <li>어린이나 반려동물의 손이 닿지 않는 곳에 보관해 주세요.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="sec footer" id="s-footer">
+  <svg class="ico-el" viewBox="0 0 100 80" style="width:44px;height:35px;color:#e6cd96"><use href="#eleph"/></svg>
+  <span class="en">ELEPHANT · INCENSE BOX</span>
+</footer>
+
+</body>
+</html>
