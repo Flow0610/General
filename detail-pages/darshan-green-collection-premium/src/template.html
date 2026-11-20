@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=780">
+<title>Darshan Green Collection | 다르샨 그린 컬렉션 인센스 스틱 6종</title>
+<style>
+/*FONTS*/
+:root{
+  --paper:#f5f1ea; --paper2:#efe9df; --sand:#e9e2d6;
+  --ink:#262521; --sub:#67625a; --mute:#a29b90; --line:#dcd4c6;
+  --sage:#5d7a70; --sage2:#a9c0b7; --ember:#c98b5a;
+  --night:#18201c; --ivory:#f3eee4;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:780px;background:var(--paper)}
+body{font-family:'Noto Sans KR',sans-serif;font-weight:300;color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all;letter-spacing:-.01em;font-feature-settings:'lnum' 1}
+img{display:block}
+ol,ul{list-style:none}
+.sec{position:relative;width:780px;overflow:hidden}
+.en{font-family:'Cormorant Garamond',serif;letter-spacing:0;font-feature-settings:'lnum' 1}
+.serif{font-family:'Noto Serif KR',serif}
+.center{text-align:center}
+.grain::after{content:"";position:absolute;inset:0;background:url(/*GRAIN*/);mix-blend-mode:overlay;opacity:.6;pointer-events:none}
+.smoke{position:absolute;left:0;top:0;pointer-events:none}
+
+/* section mark: a thin incense stick with a glowing ember */
+.mark{position:relative;display:flex;flex-direction:column;align-items:center;gap:24px}
+.mark i{position:relative;width:1px;height:60px;background:linear-gradient(rgba(201,139,90,.7),var(--line))}
+.mark i::before{content:"";position:absolute;left:-3px;top:-4px;width:7px;height:7px;border-radius:50%;background:var(--ember);box-shadow:0 0 10px 3px rgba(222,140,76,.45)}
+.mark span{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:17px;line-height:1;letter-spacing:.44em;padding-left:.44em;color:var(--sage)}
+.mark.dark i{background:linear-gradient(rgba(201,139,90,.8),rgba(243,238,228,.18))}
+.mark.dark span{color:var(--sage2)}
+.h2{position:relative;margin-top:36px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:42px;line-height:1.52;letter-spacing:-.04em;color:var(--ink)}
+.lead{position:relative;margin-top:30px;font-size:23px;line-height:1.88;color:var(--sub)}
+.lead b{font-weight:500;color:var(--ink)}
+
+/* ============ 01 COVER ============ */
+.cover{height:1300px;text-align:center;color:var(--ivory);
+  background:radial-gradient(95% 62% at 50% 68%,#2d3b35 0%,#1d2622 52%,#121815 100%)}
+.cover .glow{position:absolute;left:30px;top:560px;width:720px;height:620px;background:radial-gradient(closest-side,rgba(233,210,168,.20),rgba(233,210,168,.06) 55%,rgba(233,210,168,0))}
+.cover .brand{position:relative;padding-top:98px;font-weight:600;font-size:18px;line-height:1;letter-spacing:.52em;padding-left:.52em;color:rgba(243,238,228,.72)}
+.cover .rule{position:relative;width:1px;height:40px;margin:26px auto 0;background:rgba(243,238,228,.28)}
+.cover h1{position:relative;margin-top:26px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:124px;line-height:.9;letter-spacing:-.012em;color:#f6f1e7}
+.cover h1 span{display:block}
+.cover h1 em{display:block;font-style:italic}
+.cover .sub{position:relative;margin-top:30px;font-style:italic;font-weight:400;font-size:27px;letter-spacing:.03em;color:rgba(243,238,228,.74)}
+.cover .ko{position:relative;margin-top:12px;font-weight:400;font-size:23px;letter-spacing:-.02em;color:rgba(243,238,228,.88)}
+.cover .floor{position:absolute;left:120px;top:1084px;width:540px;height:52px;background:radial-gradient(closest-side,rgba(0,0,0,.6),rgba(0,0,0,0))}
+.cover .box{position:absolute;left:110px;top:652px;width:560px;filter:drop-shadow(0 30px 36px rgba(0,0,0,.42)) drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+.cover .facts{position:absolute;left:64px;right:64px;top:1168px;display:flex;padding-top:26px;border-top:1px solid rgba(243,238,228,.16)}
+.cover .facts li{position:relative;flex:1}
+.cover .facts li + li::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:1px;background:rgba(243,238,228,.16)}
+.cover .facts b{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:44px;line-height:1;color:#efe5d3}
+.cover .facts b i{font-style:normal;font-size:30px;margin:0 3px;position:relative;top:-4px}
+.cover .facts span{display:block;margin-top:10px;font-size:17px;letter-spacing:.02em;color:rgba(243,238,228,.6)}
+
+/* ============ 02 PROLOGUE ============ */
+.prologue{padding:150px 40px 130px;text-align:center}
+.tile{position:relative;margin-top:76px;background:#fff}
+.tile img{width:100%}
+.index{margin-top:46px;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;text-align:left}
+.index li{display:flex;align-items:center;gap:18px;padding:16px 4px;border-bottom:1px solid var(--line)}
+.index li:nth-child(-n+2){border-top:1px solid var(--line)}
+.index .n{flex:none;width:34px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:28px;line-height:1;color:var(--sage)}
+.index .t{display:flex;flex-direction:column;gap:7px}
+.index .t b{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:17px;line-height:1;letter-spacing:.24em;color:var(--ink)}
+.index .t span{font-size:18px;line-height:1;color:var(--sub)}
+
+/* ============ 03 SCENT STORIES ============ */
+.stories{padding:130px 40px 84px;text-align:center;background:var(--paper)}
+.chapter .visual{position:relative;height:380px;overflow:hidden;background-size:cover;background-position:center}
+.chapter .visual::before{content:"";position:absolute;inset:0;background:radial-gradient(360px 260px at var(--nx) 96px,var(--scrim),rgba(0,0,0,0) 72%)}
+.chapter .no{position:absolute;top:24px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:126px;line-height:1}
+.chapter .card{position:absolute;top:158px;width:520px;padding:7px;background:#fbf8f2;
+  box-shadow:0 26px 42px rgba(22,16,10,.30),0 5px 12px rgba(22,16,10,.14)}
+.chapter .card img{width:100%}
+.chapter.odd{--nx:118px} .chapter.even{--nx:662px}
+.chapter.odd .no{left:50px} .chapter.odd .card{left:212px}
+.chapter.even .no{right:50px} .chapter.even .card{left:48px}
+.tone-dark{--scrim:rgba(10,12,10,.46)} .tone-light{--scrim:rgba(251,248,242,.62)}
+.tone-dark .no{color:#fbf7ef;text-shadow:0 2px 18px rgba(0,0,0,.22)}
+.tone-light .no{color:#2c2a25;text-shadow:0 2px 18px rgba(255,255,255,.3)}
+.chapter .text{padding:54px 60px 80px}
+.chapter .name{padding-bottom:22px;border-bottom:1px solid var(--line)}
+.chapter .nm{display:flex;align-items:baseline;justify-content:space-between}
+.chapter .pk{margin-top:14px;display:flex;align-items:baseline;gap:14px}
+.chapter .pk small{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:12px;letter-spacing:.34em;color:var(--sage)}
+.chapter .pk q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;line-height:1.3;color:var(--sub);quotes:"“" "”"}
+.chapter .name h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:46px;line-height:1;letter-spacing:.12em;color:var(--ink)}
+.chapter .name span{font-family:'Noto Serif KR',serif;font-weight:400;font-size:22px;color:var(--sub)}
+.chapter .poem{margin-top:30px;font-family:'Noto Serif KR',serif;font-weight:400;font-size:29px;line-height:1.64;letter-spacing:-.045em;color:var(--ink)}
+.chapter .desc{margin-top:14px;font-size:22px;line-height:1.7;color:var(--sub)}
+.chapter .meta{margin-top:34px;display:flex;gap:36px}
+.chapter .meta div{flex:1;padding-top:18px;border-top:1px solid var(--line)}
+.chapter .meta dt{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:14px;line-height:1;letter-spacing:.34em;color:var(--sage)}
+.chapter .meta dd{margin-top:11px;font-size:20px;font-weight:400;line-height:1.4;color:var(--ink)}
+
+/* ============ 04 RITUAL ============ */
+.ritual{height:1100px;padding-top:140px;text-align:center;color:var(--ivory);
+  background:radial-gradient(80% 60% at 25% 72%,#26322d 0%,#19211d 55%,#111613 100%)}
+.ritual .h2{color:#f4efe5}
+.ritual .stick{position:absolute;left:0;top:0}
+.ritual .steps{position:absolute;left:350px;right:56px;top:470px;text-align:left}
+.ritual .steps li{display:flex;align-items:center;gap:26px;padding:30px 0;border-bottom:1px solid rgba(243,238,228,.13)}
+.ritual .steps li:first-child{border-top:1px solid rgba(243,238,228,.13)}
+.ritual .rn{flex:none;width:58px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:50px;line-height:1;color:#d6a77c}
+.ritual .steps b{display:block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:15px;line-height:1;letter-spacing:.4em;color:var(--sage2)}
+.ritual .steps p{margin-top:12px;font-size:25px;line-height:1.4;color:rgba(243,238,228,.92)}
+.ritual .note{position:absolute;left:350px;right:56px;top:948px;text-align:left;font-size:19px;line-height:1.7;color:rgba(243,238,228,.58)}
+
+/* ============ 05 THE BOX ============ */
+.boxsec{padding:150px 40px 140px;text-align:center;background:var(--sand)}
+.boxsec .tile{background:#f7f7f6}
+.dets{margin-top:20px;display:flex;gap:20px;text-align:left}
+.dets figure{flex:1}
+.dets img{width:100%;height:340px;object-fit:cover}
+.dets figcaption{margin-top:18px;display:flex;align-items:baseline;gap:14px}
+.dets figcaption b{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:15px;letter-spacing:.32em;color:var(--sage)}
+.dets figcaption span{font-size:18px;color:var(--sub)}
+
+/* ============ 06 FOR YOU ============ */
+.foryou{padding:150px 60px 130px;text-align:center}
+.fy{margin-top:58px;text-align:left}
+.fy li{display:flex;align-items:center;gap:30px;padding:32px 6px;border-bottom:1px solid var(--line)}
+.fy li:first-child{border-top:1px solid var(--line)}
+.fy .n{flex:none;width:52px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:44px;line-height:1;color:var(--sage)}
+.fy p{font-size:24px;line-height:1.6;color:var(--sub)}
+.fy p b{font-weight:500;color:var(--ink)}
+
+/* ============ 07 DETAILS ============ */
+.details{padding:150px 60px 130px;text-align:center;background:var(--paper2)}
+.spec{margin-top:58px;text-align:left;border-top:1px solid var(--ink)}
+.spec div{display:flex;padding:26px 4px;border-bottom:1px solid var(--line)}
+.spec dt{flex:none;width:176px}
+.spec dt small{display:block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;line-height:1;letter-spacing:.32em;color:var(--sage)}
+.spec dt span{display:block;margin-top:9px;font-size:19px;font-weight:500;color:var(--ink)}
+.spec dd{flex:1;font-size:21px;line-height:1.65;color:#4c4841}
+.spec dd .en{font-size:22px;letter-spacing:.02em}
+
+/* ============ 08 NOTICE ============ */
+.notice{padding:150px 60px 140px;text-align:center}
+.nb{margin-top:54px;text-align:left}
+.nb + .nb{margin-top:46px}
+.nb h3{display:flex;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--ink);font-family:'Noto Serif KR',serif;font-weight:500;font-size:25px;letter-spacing:-.03em}
+.nb h3 small{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:14px;letter-spacing:.32em;color:var(--sage)}
+.nb li{position:relative;padding:16px 0 16px 20px;border-bottom:1px solid var(--line);font-size:21px;line-height:1.66;color:#57524a}
+.nb li::before{content:"";position:absolute;left:2px;top:31px;width:5px;height:5px;border-radius:50%;background:var(--mute)}
+.nb li b{font-weight:500;color:var(--ink)}
+
+/* ============ FOOTER ============ */
+.footer{height:190px;background:var(--night);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+.footer .mark i{height:44px}
+.footer p{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:16px;letter-spacing:.5em;padding-left:.5em;color:rgba(243,238,228,.62)}
+</style>
+</head>
+<body>
+
+<!-- ===== 01 COVER ===== -->
+<section class="sec cover grain" id="s-cover">
+  <div class="glow"></div>
+  <!--SMOKE:cover-->
+  <p class="brand en">DARSHAN INCENSE</p>
+  <div class="rule"></div>
+  <h1><span>Green</span><em>Collection</em></h1>
+  <p class="sub en">Six Perfumed Incense Sticks</p>
+  <p class="ko serif">다르샨 그린 컬렉션 인센스 스틱 6종</p>
+  <div class="floor"></div>
+  <img class="box" src="assets/box-cutout.png" alt="다르샨 그린 컬렉션 박스">
+  <ul class="facts">
+    <li><b>6</b><span>가지 향</span></li>
+    <li><b>20<i>×</i>6</b><span>팩당 20개입 × 6팩</span></li>
+    <li><b>120</b><span>총 개입</span></li>
+  </ul>
+</section>
+
+<!-- ===== 02 PROLOGUE ===== -->
+<section class="sec prologue" id="s-prologue">
+  <div class="mark"><i></i><span>PROLOGUE</span></div>
+  <h2 class="h2">기분에 따라 고르는,<br>여섯 가지 향의 시간</h2>
+  <p class="lead">서로 다른 6가지 향을 한 박스에 담았습니다.<br>한 팩 20개입, 6팩 <b>총 120개입</b>.<br>그날의 기분에 따라 골라 피우는 재미가 있습니다.</p>
+  <figure class="tile"><img src="assets/packs.jpg" alt="6가지 향 인센스 스틱 팩"></figure>
+  <ol class="index">
+    <!--INDEX-->
+  </ol>
+</section>
+
+<!-- ===== 03 SCENT STORIES ===== -->
+<section class="sec stories" id="s-stories">
+  <div class="mark"><i></i><span>SCENT STORIES</span></div>
+  <h2 class="h2">향 하나에, 하나의 장면</h2>
+  <p class="lead">여섯 가지 향이 그려내는 각기 다른 무드를 만나보세요.</p>
+</section>
+<!--CHAPTERS-->
+
+<!-- ===== 04 RITUAL ===== -->
+<section class="sec ritual grain" id="s-ritual">
+  <!--STICK-->
+  <div class="mark dark"><i></i><span>THE RITUAL</span></div>
+  <h2 class="h2">향을 피우는<br>세 가지 순서</h2>
+  <ol class="steps">
+    <li><span class="rn">I</span><div><b>LIGHT</b><p>스틱 끝에 불을 붙여요</p></div></li>
+    <li><span class="rn">II</span><div><b>WAVE</b><p>불꽃을 가볍게 흔들어 꺼요</p></div></li>
+    <li><span class="rn">III</span><div><b>REST</b><p>홀더에 꽂아 향을 즐겨요</p></div></li>
+  </ol>
+  <p class="note">불꽃이 아닌 은은한 불씨와 연기로<br>향을 즐기는 방식이에요.</p>
+</section>
+
+<!-- ===== 05 THE BOX ===== -->
+<section class="sec boxsec" id="s-box">
+  <div class="mark"><i></i><span>THE BOX</span></div>
+  <h2 class="h2">선물하기 좋은<br>컬렉션 박스</h2>
+  <p class="lead">여섯 가지 향이 창으로 한눈에 보이는 윈도우 패키지.<br>향을 좋아하는 분께 선물하기에도 좋아요.</p>
+  <figure class="tile"><img src="assets/box-retouched.jpg" alt="다르샨 그린 컬렉션 박스 정면"></figure>
+  <div class="dets">
+    <figure><img src="assets/detail-jasmine.jpg" alt=""><figcaption><b>JASMINE</b><span>자스민 플라워 패턴</span></figcaption></figure>
+    <figure><img src="assets/detail-logo.jpg" alt=""><figcaption><b>DARSHAN</b><span>다르샨 인센스 로고</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- ===== 06 FOR YOU ===== -->
+<section class="sec foryou" id="s-foryou">
+  <div class="mark"><i></i><span>FOR YOU</span></div>
+  <h2 class="h2">이런 분께 추천합니다</h2>
+  <ol class="fy">
+    <li><span class="n">01</span><p>인센스가 처음이라<br><b>어떤 향이 맞을지 모르겠는 분</b></p></li>
+    <li><span class="n">02</span><p>그날 기분에 따라<br><b>향을 바꿔 피우고 싶은 분</b></p></li>
+    <li><span class="n">03</span><p>향 좋아하는 분께<br><b>줄 선물을 찾고 있는 분</b></p></li>
+  </ol>
+</section>
+
+<!-- ===== 07 DETAILS ===== -->
+<section class="sec details" id="s-details">
+  <div class="mark"><i></i><span>DETAILS</span></div>
+  <h2 class="h2">제품 정보</h2>
+  <dl class="spec">
+    <div><dt><small>PRODUCT</small><span>상품명</span></dt><dd>다르샨 그린 컬렉션 인센스 스틱 6종</dd></div>
+    <div><dt><small>CONTENTS</small><span>구성</span></dt><dd>6가지 향 × 각 1팩 (팩당 20개입)<br>총 120개입</dd></div>
+    <div><dt><small>SCENTS</small><span>향 종류</span></dt><dd><!--SPECSCENTS--></dd></div>
+    <div><dt><small>TYPE</small><span>형태</span></dt><dd>스틱형 인센스 <span class="en">(Perfumed Incense Sticks)</span></dd></div>
+    <div><dt><small>BRAND</small><span>브랜드</span></dt><dd><span class="en">DARSHAN</span></dd></div>
+  </dl>
+</section>
+
+<!-- ===== 08 NOTICE ===== -->
+<section class="sec notice" id="s-notice">
+  <div class="mark"><i></i><span>NOTICE</span></div>
+  <h2 class="h2">구매 전 확인해 주세요</h2>
+  <div class="nb">
+    <h3><small>01</small>상품 안내</h3>
+    <ul>
+      <li>향은 개인의 취향과 사용 환경에 따라 <b>다르게 느껴질 수 있습니다.</b></li>
+      <li>제조사 사정에 따라 <b>팩·박스 디자인과 팩 배열</b>이 이미지와 다를 수 있습니다.</li>
+      <li>모니터 및 휴대폰 화면 설정에 따라 실제 색상과 차이가 있을 수 있습니다.</li>
+    </ul>
+  </div>
+  <div class="nb">
+    <h3><small>02</small>사용 시 주의사항</h3>
+    <ul>
+      <li>불을 사용하는 제품이므로 <b>사용 중에는 자리를 비우지 마세요.</b></li>
+      <li>불에 타기 쉬운 물건과 떨어진 평평한 곳에서, 인센스 홀더에 꽂아 사용해 주세요.</li>
+      <li>밀폐된 공간보다는 환기가 되는 곳에서 사용해 주세요.</li>
+      <li>사용 후에는 불씨가 완전히 꺼졌는지 확인해 주세요.</li>
+      <li>어린이와 반려동물의 손이 닿지 않는 곳에 보관해 주세요.</li>
+      <li>직사광선과 습기를 피해 서늘한 곳에 보관해 주세요.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="sec footer grain" id="s-footer">
+  <div class="mark dark"><i></i></div>
+  <p>DARSHAN INCENSE · GREEN COLLECTION</p>
+</footer>
+
+</body>
+</html>
