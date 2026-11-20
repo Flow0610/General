@@ -1,0 +1,396 @@
+{
+  "meta": {
+    "name": "Estate Editorial",
+    "description": "햇빛이 드는 테라스에서 찍은 매거진 표지 같은 스타일. 크림색 회벽 배경, 올리브 블랙 한 가지 잉크색, 큰 세리프 제목과 작은 대문자 라벨, 돌 받침 위에 제품 하나만 올린 사진으로 이루어진다. 세로형 상세페이지(가로 860px) 적용을 기준으로 크기를 환산했다.",
+    "source_references": [
+      "매거진 표지형 향수 이미지 1장 (736×1104px, 마스트헤드 'ESTATE', 사용자 제공)"
+    ],
+    "created_at": "2026-11-20"
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "monochromatic",
+      "primary": {
+        "hex": "#575739",
+        "role": "깊은 올리브. 대리석 받침, 색 면, 굵은 구분 요소에 쓰는 대표색"
+      },
+      "secondary": {
+        "hex": "#928560",
+        "role": "카키. 벽에 드리운 그림자 색. 보조 면, 사진 위 음영, 옅은 구분선"
+      },
+      "accent": {
+        "hex": "#3b3b22",
+        "role": "짙은 올리브. 버튼, 숫자, 강조 문구처럼 눈에 띄어야 하는 작은 요소"
+      },
+      "neutral": {
+        "scale": [
+          "#ead8b8",
+          "#d3c198",
+          "#b2a37a",
+          "#928560",
+          "#77724e",
+          "#575739",
+          "#3b3b22",
+          "#1d1e09"
+        ],
+        "usage": "가장 밝은 #ead8b8이 배경, 가장 어두운 #1d1e09가 모든 글자색(제목·본문·라벨 공통). 중간 단계는 사진 속 그림자와 사물에서 나온 색으로, 면과 선에만 쓰고 글자에는 쓰지 않는다. 순수한 흰색과 검정은 쓰지 않는다."
+      },
+      "semantic": {
+        "success": "#5f6b3a",
+        "warning": "#b08a3c",
+        "error": "#8a3b2a",
+        "info": "#77724e"
+      },
+      "surface": {
+        "background": "#ead8b8",
+        "card": "#d3c198",
+        "elevated": "#e3cfae"
+      },
+      "contrast_strategy": "dark-on-light dominant. 크림 배경 위에 올리브 블랙 글자 하나로 대비를 만든다. 색의 종류가 아니라 밝기 차이로 위계를 만든다.",
+      "measurement": {
+        "k": 8,
+        "sampling": {
+          "method": "deterministic_stratified",
+          "max_pixels": 160000,
+          "sampled_pixels": 160000
+        }
+      },
+      "measured_palette": [
+        { "hex": "#ead8b8", "coverage": 0.3798, "role": "background" },
+        { "hex": "#928560", "coverage": 0.1676, "role": "unassigned" },
+        { "hex": "#77724e", "coverage": 0.0932, "role": "unassigned" },
+        { "hex": "#d3c198", "coverage": 0.0837, "role": "unassigned" },
+        { "hex": "#b2a37a", "coverage": 0.0819, "role": "unassigned" },
+        { "hex": "#575739", "coverage": 0.0773, "role": "unassigned" },
+        { "hex": "#1d1e09", "coverage": 0.064, "role": "text" },
+        { "hex": "#3b3b22", "coverage": 0.0525, "role": "accent" }
+      ],
+      "region_samples": {
+        "note": "사물별로 잘라서 따로 측정한 값. measured_palette를 보충하는 참고값이다.",
+        "wall_lit": ["#ead6b6", "#e3cfae"],
+        "wall_shadow": ["#91805a", "#dac5a2"],
+        "marble": ["#474930", "#6f6e4f", "#aba37e"],
+        "perfume_liquid": ["#d4ce8f", "#a29e60", "#70703b"],
+        "leaf": ["#1f2308"],
+        "cap": ["#111206", "#4f5332"],
+        "fig": ["#22180d", "#695136", "#a68862"]
+      },
+      "derived_note": "semantic 네 가지 색은 기준 이미지에 없어서 같은 색 온도 안에서 만든 값이다(측정값 아님). 이미지 전체에 보라·파랑 계열 픽셀은 0%였다. 무화과가 보라색으로 보이는 것은 주변 초록과의 대비 때문이며 실제 색은 갈색(#695136)이다."
+    },
+    "typography": {
+      "type_scale": {
+        "display": {
+          "size": "190px",
+          "weight": "400",
+          "line_height": "1.0",
+          "tracking": "0.05em"
+        },
+        "heading_1": {
+          "size": "49px",
+          "weight": "400",
+          "line_height": "1.2",
+          "tracking": "0"
+        },
+        "heading_2": {
+          "size": "36px",
+          "weight": "400",
+          "line_height": "1.3",
+          "tracking": "0"
+        },
+        "heading_3": {
+          "size": "26px",
+          "weight": "400",
+          "line_height": "1.4",
+          "tracking": "0"
+        },
+        "body": {
+          "size": "20px",
+          "weight": "400",
+          "line_height": "1.8",
+          "tracking": "-0.01em"
+        },
+        "body_small": {
+          "size": "16px",
+          "weight": "400",
+          "line_height": "1.7",
+          "tracking": "0"
+        },
+        "caption": {
+          "size": "14px",
+          "weight": "400",
+          "line_height": "1.6",
+          "tracking": "0.02em"
+        },
+        "overline": {
+          "size": "13px",
+          "weight": "500",
+          "line_height": "1.4",
+          "tracking": "0.14em"
+        }
+      },
+      "font_families": {
+        "heading": "영문: 획 대비가 큰 디스플레이 세리프(Cormorant Garamond, Playfair Display 계열). 한글: 마루 부리(MaruBuri) 또는 Noto Serif KR",
+        "body": "Pretendard (한글·영문 공통 산세리프)",
+        "mono": "사용하지 않음. 필요하면 IBM Plex Mono"
+      },
+      "font_style_notes": "마스트헤드는 얇은 가로획과 뾰족한 세리프를 가진 대문자 세리프로, 화면 폭의 약 74%를 채운다. 제목은 같은 계열의 본문용 세리프를 굵기 400으로 쓴다. 라벨은 작은 산세리프 대문자에 자간을 넓게 준다. 굵은 글씨(700 이상)는 쓰지 않는다. 크기는 기준 이미지(가로 736px)에서 측정한 값을 860px로 환산했고, body 이하는 표지에 없어 상세페이지 가독성 기준으로 정했다."
+    },
+    "spacing": {
+      "base_unit": "8px",
+      "scale": [8, 16, 24, 32, 48, 64, 96, 128, 160],
+      "content_density": "spacious",
+      "section_rhythm": "섹션 사이는 128–160px로 넓게, 섹션 안에서는 라벨과 제목 사이 24–32px, 제목과 본문 사이 32–48px. 한 화면에 요소를 3–4개 이하로 둔다."
+    },
+    "layout": {
+      "grid_system": "좌우 48px 여백의 1단 구성. 글은 왼쪽 여백선에 맞추고, 제품 사진은 여백 없이 화면 폭 전체를 쓴다.",
+      "max_content_width": "860px (쿠팡용은 780px로 같은 비율 축소)",
+      "columns": "1",
+      "gutter": "48px",
+      "breakpoints": "없음. 고정 폭 이미지로 출력",
+      "alignment_tendency": "asymmetric"
+    },
+    "shape": {
+      "border_radius": {
+        "small": "0px",
+        "medium": "0px",
+        "large": "0px",
+        "pill": "0px"
+      },
+      "border_usage": "none",
+      "divider_style": "선을 거의 쓰지 않는다. 필요하면 #928560 색의 1px 가는 선을 왼쪽 여백선에서 시작해 짧게 긋는다."
+    },
+    "elevation": {
+      "shadow_style": "none",
+      "levels": {
+        "low": "none",
+        "medium": "none",
+        "high": "none"
+      },
+      "depth_cues": "화면 요소에는 그림자를 넣지 않는다. 깊이는 사진 속 실제 햇빛과 잎 그림자, 돌 받침의 반사로만 만든다."
+    },
+    "iconography": {
+      "style": "아이콘을 쓰지 않는다. 필요하면 가는 선 아이콘",
+      "stroke_weight": "1px",
+      "size_scale": "24px, 32px",
+      "preferred_set": "없음. 숫자와 라벨로 대신한다"
+    },
+    "motion": {
+      "easing": "해당 없음 (정지 이미지)",
+      "duration_scale": {
+        "micro": "0ms",
+        "normal": "0ms",
+        "macro": "0ms"
+      },
+      "entrance_pattern": "없음",
+      "exit_pattern": "없음",
+      "philosophy": "none"
+    },
+    "components": {
+      "button_style": "기준 이미지에 없음. 넣어야 한다면 #3b3b22 바탕에 #ead8b8 글자, 모서리 0px, 대문자 라벨 서체",
+      "input_style": "해당 없음",
+      "card_style": "테두리와 그림자가 없는 색 면(#d3c198). 카드보다 여백으로 구분하는 쪽을 우선한다",
+      "navigation_pattern": "해당 없음. 화면 맨 위 좌우에 작은 대문자 라벨 두 개를 두는 매거진 표지식 머리줄",
+      "modal_style": "해당 없음",
+      "list_style": "글머리 기호 없이 번호(세리프 숫자)와 가는 선으로 구분",
+      "component_notes": "화면 구성은 '머리줄 라벨 → 큰 세리프 제목 → 작은 라벨 → 세리프 문장 → 화면 폭 사진' 순서를 반복한다."
+    }
+  },
+  "design_style": {
+    "aesthetic": {
+      "mood": ["따뜻한", "고요한", "여유로운", "고급스러운"],
+      "visual_metaphor": "여름 오후, 무화과나무 그늘이 드리운 테라스에 놓인 매거진 한 권",
+      "era_influence": "현대 인쇄 매거진과 지중해풍 라이프스타일 화보",
+      "genre": "luxury editorial",
+      "personality_traits": ["차분한", "자신 있는", "절제된", "안목 있는"],
+      "adjectives": ["sun-drenched", "quiet", "tactile", "editorial", "organic"]
+    },
+    "visual_language": {
+      "complexity": "minimal",
+      "ornamentation": "none",
+      "whitespace_usage": "화면 위쪽 40%를 벽과 그림자만 있는 빈 공간으로 두고 그 위에 글을 올린다. 빈 공간이 곧 배경 사진이다.",
+      "visual_weight_distribution": "글은 왼쪽 위, 제품은 오른쪽 아래. 아래 4분의 1을 어두운 돌 받침이 받쳐 무게를 잡는다.",
+      "focal_strategy": "single hero element",
+      "contrast_level": "글자는 높음, 사진은 중간. 사진 속 색은 모두 같은 올리브 계열이라 부드럽게 이어진다.",
+      "texture_usage": "거친 회벽, 흰 결이 있는 녹색 대리석, 투명 유리, 무화과와 잎. 질감은 모두 사진에서 나오고 화면 요소에는 질감을 넣지 않는다."
+    },
+    "composition": {
+      "hierarchy_method": "scale contrast",
+      "balance_type": "asymmetric",
+      "flow_direction": "위에서 아래로. 머리줄 → 마스트헤드 → 제목 → 제품 순으로 시선이 대각선으로 내려온다.",
+      "grouping_strategy": "작은 라벨과 그 아래 제목을 한 묶음으로 붙이고, 묶음 사이는 넓게 띄운다.",
+      "negative_space_role": "빛과 그림자를 보여 주는 무대. 비어 있는 벽이 분위기의 대부분을 만든다."
+    },
+    "imagery": {
+      "photo_treatment": "낮은 각도의 따뜻한 햇빛, 나뭇잎 사이로 떨어지는 얼룩 그림자, 얕지 않은 심도, 채도를 낮춘 따뜻한 색 보정. 제품은 정면 눈높이에서 돌 받침 위에 단독으로 둔다.",
+      "illustration_style": "사용하지 않음",
+      "graphic_elements": "없음. 글자와 사진뿐이다.",
+      "pattern_usage": "없음. 잎 그림자가 무늬 역할을 한다.",
+      "image_shape": "모서리가 각진 직사각형, 화면 폭 전체"
+    },
+    "interaction_feel": {
+      "feedback_style": "해당 없음 (정지 이미지)",
+      "hover_behavior": "해당 없음",
+      "transition_personality": "fade-subtle",
+      "loading_style": "해당 없음",
+      "microinteraction_density": "없음"
+    },
+    "brand_voice_in_ui": {
+      "tone": "잡지 기사처럼 조용하고 서술적인 말투",
+      "formality": "격식 있는 편. 한글은 합니다체",
+      "cta_style": "subtle suggestion",
+      "empty_state_approach": "해당 없음",
+      "error_tone": "해당 없음"
+    }
+  },
+  "visual_effects": {
+    "overview": {
+      "effect_intensity": "none",
+      "performance_tier": "lightweight",
+      "fallback_strategy": "static snapshot",
+      "primary_technology": "CSS only"
+    },
+    "background_effects": {
+      "type": "none",
+      "description": "효과 없음. 배경의 그림자는 사진으로 촬영된 것이다.",
+      "technology": "없음",
+      "params": {
+        "color_palette": ["#ead8b8", "#928560"],
+        "speed": "0",
+        "density": "0",
+        "opacity": "1",
+        "blend_mode": "normal"
+      }
+    },
+    "particle_systems": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "technology": "없음",
+      "params": {
+        "count": "0",
+        "shape": "없음",
+        "size_range": "없음",
+        "movement_pattern": "없음",
+        "color_behavior": "없음",
+        "interaction": "none",
+        "spawn_area": "없음"
+      }
+    },
+    "3d_elements": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "technology": "없음",
+      "params": {
+        "renderer": "없음",
+        "lighting": "없음",
+        "camera": "없음",
+        "materials": "없음",
+        "geometry": "없음",
+        "post_processing": [],
+        "interaction_model": "없음"
+      }
+    },
+    "shader_effects": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "technology": "없음",
+      "params": {
+        "uniforms": "없음",
+        "vertex_manipulation": "없음",
+        "fragment_output": "없음",
+        "noise_type": "없음",
+        "distortion": "없음"
+      }
+    },
+    "scroll_effects": {
+      "parallax": {
+        "enabled": false,
+        "layers": "0",
+        "depth_range": "없음",
+        "speed_curve": "없음"
+      },
+      "scroll_triggered_animations": {
+        "enabled": false,
+        "trigger_points": "없음",
+        "animation_type": "없음",
+        "scrub_behavior": "없음"
+      },
+      "scroll_morphing": {
+        "enabled": false,
+        "description": "사용하지 않음"
+      }
+    },
+    "text_effects": {
+      "type": "none",
+      "description": "글자 효과 없음. 사진 위에 단색 글자를 그대로 올린다.",
+      "technology": "없음",
+      "params": {
+        "split_strategy": "없음",
+        "animation_per_unit": "없음",
+        "stagger": "없음",
+        "effect_style": "없음"
+      }
+    },
+    "cursor_effects": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "params": {
+        "shape": "없음",
+        "size": "없음",
+        "blend_mode": "없음",
+        "trail": "없음",
+        "interaction_zone": "없음"
+      }
+    },
+    "image_effects": {
+      "type": "none",
+      "description": "효과 없음",
+      "technology": "없음",
+      "params": {
+        "filter_pipeline": "없음",
+        "hover_transform": "없음",
+        "reveal_animation": "없음",
+        "distortion_type": "없음"
+      }
+    },
+    "glassmorphism_neumorphism": {
+      "enabled": false,
+      "style": "none",
+      "params": {
+        "blur_radius": "0",
+        "transparency": "0",
+        "border_treatment": "없음",
+        "shadow_type": "없음",
+        "light_source_angle": "없음"
+      }
+    },
+    "canvas_drawings": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "technology": "없음",
+      "params": {
+        "draw_method": "없음",
+        "animation_loop": "없음",
+        "color_scheme": "없음",
+        "responsiveness": "없음",
+        "interaction": "없음"
+      }
+    },
+    "svg_animations": {
+      "enabled": false,
+      "type": "none",
+      "description": "사용하지 않음",
+      "params": {
+        "animation_method": "없음",
+        "path_morphing": "없음",
+        "stroke_animation": "없음",
+        "filter_effects": "없음"
+      }
+    },
+    "composite_notes": "기준 이미지는 정지된 매거진 표지 한 장이라 코드로 만드는 효과가 없다. 유리병의 굴절, 대리석 반사, 잎 그림자는 모두 촬영된 사진의 일부다. 상세페이지에 적용할 때 분위기의 대부분이 사진의 빛에서 나오므로, 같은 조명(낮은 각도의 따뜻한 햇빛과 잎 그림자)으로 찍은 제품 사진이 없으면 색과 서체만으로는 같은 느낌이 나지 않는다. 표지는 한 화면짜리라 섹션 간격과 본문 크기는 표지에서 직접 측정한 값이 아니라 같은 비율로 추정한 값이다."
+  }
+}
